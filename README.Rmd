@@ -1,0 +1,39 @@
+---
+title: "README"
+author: "Thomas Pin"
+date: "29/02/2020"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo=FALSE, include=FALSE}
+library(tidyverse)
+library(knitr)
+
+course_key <- tibble(`Course Number` = c(563, 524, 553, 574),
+       `Course Name` = c("Unsupervised Learning", "Collaborative Software Development", "Statistical Inference and Computation II", "Spatial and Temporal Models"))
+```
+
+# UBC MDS block 5 homework
+
+A GitHub repository that serves 2 purposes:
+
+1. a learning space to explore and practice using GitHub issues in milestones and Project boards
+2. a homework organizer for UBC MDS students for their 5th block in the program
+
+## Course Key
+
+```{r, echo=FALSE}
+kable(course_key)
+```
+
+## Usage
+
+1. Import this repository to obtain a copy of it for yourself (do not fork it).
+2. Create a remote branch named create (this will use GitHub Actions to create 19 issues for you in your copy of this repository).
+3. Create 5 milestones, named week 1 through to week 5, and group the relevant issue to each milestone.
+4. Create a project board named block 5. Put the issues in appropriate columns.
+
